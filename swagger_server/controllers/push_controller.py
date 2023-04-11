@@ -30,4 +30,4 @@ def find_notifications_by_status(status=None):  # noqa: E501
 
     :rtype: List[Notification]
     """
-    return 'Se busca notificacion!'
+    return 'El estado de la notificacion es: '+ status;

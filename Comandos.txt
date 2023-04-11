@@ -1,0 +1,59 @@
+#comandos
+#py .\uso_paquetes.py
+#pip --version
+#pip freeze #verificar paquetes que instale
+#py .\setup.py sdist  #carpeta raiz proyecto
+#pip install .\paquetecalculo-1.0.tar.gz #en la carpeta dist
+#pip uninstall paquetecalculo  #Borrar paquetes que instale
+#----
+##pip install requests==2.28.2 #instalar libreria con version
+#---Entorno virtual
+#py -m venv venv #genera entorno virtual
+#cd .\venv\Scripts\
+#.\activate #activar entorno virtual
+#pip freeze
+#pip install #instalar en el script del entorno virtual
+#pip freeze > requirements.txt #va en la raiz del proyecto
+#pip install -r requirements.txt
+
+#crear el requerimiento
+#py -m venv venv #genera entorno virtual
+#cd .\venv\Script\
+#.\activate #dentro de script
+#pip freeze
+#pip install -r .\requirements.txt
+#py -m pip install requests
+#pip install requests==2.28.2
+
+#Docker
+#docker ps //docker activos
+#docker ps -a //inactivos
+#docker images //muestra imagenes docker
+
+# building the image
+#docker build -t swagger_server .
+
+# starting up a container
+#docker run -p 8080:8080 swagger_server
+
+#docker image ls
+#docker ps
+#docker ps -a
+#docker rmi -f 68a6c6b26a60
+#Docker Compose
+#docker compose down
+#docker compose up -d --build
+#docker restart backend-service
+
+#Conexion MySQL
+#docker exec -ti database-service /bin/bash
+#mysql -u root -proot123
+#show databases;
+#use dbglobalhitss;
+#show tables;
+#select * from institution;
+
+#Buscar la aplicacion en puerto
+#netstat -ano | findstr :8080
+#Cierra la aplicacion que ocupa dicho puerto
+#taskkill /PID 4380 /F
